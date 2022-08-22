@@ -36,7 +36,9 @@ namespace LSKR_Launcher
             }
             else if (result.StartsWith("lostsaga") == true)
             {
-                MessageBox.Show(result);
+                StartProcess.OnCmdStart("start " + result);
+                //StartProcess.OnStart("C:\\Program Files\\LostSaga\\lswebbroker.exe", result);
+                //MessageBox.Show(result);
             }
             else
             {
